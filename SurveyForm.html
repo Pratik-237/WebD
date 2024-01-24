@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="suryey.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">NIT Kurukshetra Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <div id="textborder"><label id="name-label" for="name">Name</label></div>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current occupation</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>What is your stream in NIT KKR</p>
+
+          <select id="dropdown" name="stream" class="form-control" required>
+            <option >select stream</option>
+            <option value="Btech">B.Tech</option>
+            <option value="Mtech">M.Tech</option>
+            <option value="msc">MSc.</option>
+            <option value="mca">MCA</option>
+          </select>
+            
+        </div>
+
+        <div class="form-group">
+          <p>How do you rate your overall experience in the campus</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="very pleasant">Very pleasant</option>
+            <option value="pleasant">pleasant</option>
+            <option value="satisfied">satisfied</option>
+            <option value="not good">Not good</option>
+            <option value="miserable">Miserable</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="hostel"
+              type="checkbox"
+              class="input-checkbox"
+            />Hostel facilities</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="mess"
+              type="checkbox"
+              class="input-checkbox"
+            />Mess food</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="faculty"
+              type="checkbox"
+              class="input-checkbox"
+            />Faculty style of teaching</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="vibe"
+              type="checkbox"
+              class="input-checkbox"
+            />Campus</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="open-source-community"
+              type="checkbox"
+              class="input-checkbox"
+            />Open Source Community</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="gitter-help-rooms"
+              type="checkbox"
+              class="input-checkbox"
+            />Gitter help rooms</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="videos"
+              type="checkbox"
+              class="input-checkbox"
+            />Videos</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="city-meetups"
+              type="checkbox"
+              class="input-checkbox"
+            />City Meetups</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="wiki"
+              type="checkbox"
+              class="input-checkbox"
+            />Wiki</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="forum"
+              type="checkbox"
+              class="input-checkbox"
+            />Forum</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="additional-courses"
+              type="checkbox"
+              class="input-checkbox"
+            />Additional Courses</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
